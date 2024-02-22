@@ -9,42 +9,88 @@ Verde: #39b54a;
 
 * {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
+
+body {
+    background-color: #ebebeb;
+}
+
 header {
-    background-color: #EAC926;
     padding: 15px;
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header-sup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
 }
 
 .logo {
-    width: 200px;
-    margin-bottom: 20px;
+    width: 45%;
+    height: 35px;
 }
 
-.search-bar {
-    margin-bottom: 20px;
+.search-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.search-bar-container input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-bar-container button {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 25px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
 }
 
 header h3 {
+    width: 100%;
+    font-size: 16px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: auto 0;
 }
 
-ul, li, a {
+.navs-container {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.navs-container ul, li, a {
     padding: 0;
-    list-style-type: none; 
-    text-decoration: none; 
+    list-style-type: none;
+    text-decoration: none;
     color: inherit;
+    font-size: 12px;
 }
 
-nav, nav ul {
-    margin-bottom: 20px;
-}
-
-.burger-menu  {
+.burger-menu {
     width: 20px;
     margin: auto;
 }
@@ -52,35 +98,123 @@ nav, nav ul {
 .burger-menu i {
     padding: 10px;
     color: white;
-    background-color:#1259c3;
+    background-color: #1259c3;
     border-radius: 5px;
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.banner {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titular {
+    margin: 15px 0;
+    text-align: left;
+}
+
+article {
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.info-article {
+    border-top: 1px solid #ebebeb;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    background-color: white;
+    width: 100%
 }
 
 article img {
     width: 100%;
 }
 
+.truck-div {
+    position: relative;
+}
+
+.truck-div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -25px;
+}
+
+.truck-div i:hover {
+    transform: rotateZ(-90deg);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
 .titulares {
+    margin: auto;
     font-size: 24px;
+}
+
+.precio-desc-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .precio {
     font-size: 18px;
-    margin-bottom: 5px;
+    width: 30%;
 }
 
 .descuento {
     font-size: 16px;
-    margin-bottom: 5px;
+    color: #39b54a;
+    width: 70%;
 }
+
 
 .descripcion {
+    display: none;
+    margin-top: 10px;
     font-size: 16px;
-    margin-bottom: 5px;
 }
 
-footer  {
+article:hover {
+    .descripcion {
+        display: block;
+    };
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+footer {
+    background-color: white;
     padding: 15px;
 }
 
@@ -93,4 +227,490 @@ footer i {
     color: #1259c3;
     margin-bottom: 10px;
     font-size: 2em;
+}
+footer i:hover {
+    color: #0022AA;
+}
+
+/* -----------------------------REGISTER------------------------------------ */
+
+.form-title {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.reg-form {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.reg-form .form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-div>label {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-div label {
+    font-size: 12px;
+}
+
+.reg-form .form-div>input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-buttons>input {
+    width: 50%;
+}
+
+.reg-form .div-perfiles {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.reg-form .div-botones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.reg-form .div-botones input {
+    margin-top: 15px;
+    width: 30%;
+    padding: 10px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+/* -----------------------------REGISTER------------------------------------ */
+
+/* -----------------------------LOGIN------------------------------------ */
+
+.login-form {
+    padding: 35px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.login-form .form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.login-form .form-div>input {
+    width: 55%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.login-form>input {
+    margin-top: 10px;
+    align-self: center;
+    width: 55%;
+    padding: 5px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+.login-form>input:hover {
+    background-color: #0022AA;
+}
+
+
+/* -----------------------------LOGIN------------------------------------ */
+
+@media (361px <=width <=769px) {
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (770px <=width <=1200px) {
+    
+    header {
+        padding: 15px 15px 5px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-sup {
+        width: 100%;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .header-sup {
+        width: 100%;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: nowrap;
+    }
+
+
+    .logo {
+        width: 30%;
+        height: auto;
+    }
+
+    .search-bar-container {
+        justify-content: space-evenly;
+        align-items: space-evenly;
+        width: 30%;
+    }
+
+    .search-bar-container input {
+        height: 20px;
+        width: 75%;
+        border-radius: 5px;
+    }
+
+    .search-bar-container button {
+        position: static;
+        height: 20px;
+        width: 10%;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+        outline: none;
+    }
+
+    header h3 {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    /* .descripcion {
+        display: block;
+    } */
+
+    .navs-container {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: wrap
+    }
+
+    .site-navbar {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    .user-navbar {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    section {
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    article {
+        margin-bottom: 20px;
+        width: 45%
+    }
+
+    .info-article {
+        width: 100%
+    }
+
+    article img {
+        width: 100%;
+    }
+
+    .content-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* -----------------------------REGISTER------------------------------------ */
+
+    .reg-form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reg-form .form-div {
+        width: 75%;
+    }
+
+    .reg-form .form-div>input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .reg-form .form-buttons>input {
+        width: 50%;
+    }
+
+    .reg-form .div-perfiles {
+        width: 40%;
+    }
+
+    .reg-form .div-botones {
+        width: 75%;
+    }
+
+    /* -----------------------------REGISTER------------------------------------ */
+    /* -----------------------------LOGIN------------------------------------ */
+
+
+    .login-form .form-div>input {
+        height: 25px;
+        width: 50%;
+    }
+
+    .login-form>input {
+        height: 25px;
+        width: 50%;
+    }
+
+    /* -----------------------------LOGIN------------------------------------ */
+}
+
+@media (1200px <=width) {
+
+    header {
+        padding: 15px 15px 5px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-sup {
+        width: 100%;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .header-sup {
+        width: 100%;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        width: 30%;
+        height: auto;
+    }
+
+    .search-bar-container {
+        justify-content: space-evenly;
+        align-items: space-evenly;
+        width: 30%;
+    }
+
+    .search-bar-container input {
+        height: 30px;
+        width: 85%;
+        border-radius: 5px;
+    }
+
+    .search-bar-container button {
+        position: static;
+        height: 30px;
+        width: 10%;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+        outline: none;
+    }
+
+    header h3 {
+        width: 35%;
+        font-size: 18px;
+    }
+
+    .navs-container {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: wrap
+    }
+
+    .navs-container a {
+        font-size: 16px;
+    }
+
+    .site-navbar {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    .user-navbar {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    article {
+        margin-bottom: 20px;
+        width: 23%
+    }
+
+    /* .descripcion {
+        display: block;
+    } */
+
+    .info-article {
+        width: 100%
+    }
+
+    article img {
+        width: 100%;
+    }
+
+    .content-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+
+
+    /* -----------------------------REGISTER------------------------------------ */
+
+    .reg-form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reg-form .form-div {
+        width: 75%;
+    }
+
+
+    .reg-form .form-div label {
+        font-size: 16px;
+    }
+
+    .reg-form .form-div>input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .reg-form .form-buttons>input {
+        width: 50%;
+    }
+
+    .reg-form .div-perfiles {
+        width: 40%;
+    }
+
+    .reg-form .div-botones {
+        width: 75%;
+    }
+
+    /* -----------------------------REGISTER------------------------------------ */
+    /* -----------------------------LOGIN------------------------------------ */
+
+    .login-form {
+        padding: 25px 0;
+    }
+
+    .login-form .form-div>input {
+        height: 30px;
+        width: 35%;
+    }
+
+    .login-form>input {
+        height: 30px;
+        width: 35%;
+    }
+
+    /* -----------------------------LOGIN------------------------------------ */
 }
