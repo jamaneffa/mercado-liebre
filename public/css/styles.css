@@ -32,13 +32,13 @@ header {
 .header-sup {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
     flex-wrap: wrap;
 }
 
 .logo {
-    width: 50%;
+    width: 45%;
     height: 35px;
 }
 
@@ -74,7 +74,7 @@ header h3 {
     width: 100%;
     font-size: 16px;
     text-align: center;
-    margin: 20px 0;
+    margin: auto 0;
 }
 
 .navs-container {
@@ -84,13 +84,13 @@ header h3 {
 
 .navs-container ul, li, a {
     padding: 0;
-    list-style-type: none; 
-    text-decoration: none; 
+    list-style-type: none;
+    text-decoration: none;
     color: inherit;
     font-size: 12px;
 }
 
-.burger-menu  {
+.burger-menu {
     width: 20px;
     margin: auto;
 }
@@ -98,16 +98,16 @@ header h3 {
 .burger-menu i {
     padding: 10px;
     color: white;
-    background-color:#1259c3;
+    background-color: #1259c3;
     border-radius: 5px;
     font-size: 1.5em;
 }
 
-.banner{
+.banner {
     padding: 0;
     margin: 0;
     width: 100%;
-}   
+}
 
 main {
     display: flex;
@@ -166,13 +166,7 @@ article img {
     position: absolute;
     right: 20px;
     top: -25px;
-    }
-
-/* .truck-div i:hover {
-    transform: rotateZ(-90deg);
-    transition-property: transform;
-    transition-duration: 2s;
-} */
+}
 
 .titulares {
     margin: auto;
@@ -187,6 +181,7 @@ article img {
     flex-wrap: wrap;
     width: 100%;
 }
+
 .precio {
     font-size: 18px;
     width: 30%;
@@ -205,7 +200,8 @@ article img {
     font-size: 16px;
 }
 
-footer  {
+footer {
+    background-color: white;
     padding: 15px;
 }
 
@@ -220,33 +216,160 @@ footer i {
     font-size: 2em;
 }
 
-@media (361px <= width <= 769px) {
+/* -----------------------------REGISTER------------------------------------ */
+
+.form-title {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.reg-form {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.reg-form .form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-div>label {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-div label {
+    font-size: 12px;
+}
+
+.reg-form .form-div>input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-buttons>input {
+    width: 50%;
+}
+
+.reg-form .div-perfiles {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.reg-form .div-botones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.reg-form .div-botones input {
+    margin-top: 15px;
+    width: 30%;
+    padding: 10px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+/* -----------------------------REGISTER------------------------------------ */
+
+/* -----------------------------LOGIN------------------------------------ */
+
+.login-form {
+    padding: 35px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.login-form .form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.login-form .form-div>input {
+    width: 55%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.login-form>input {
+    margin-top: 10px;
+    align-self: center;
+    width: 55%;
+    padding: 5px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* -----------------------------LOGIN------------------------------------ */
+
+@media (361px <=width <=769px) {
     article {
-        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
-@media (770px <= width <= 1200px) {
+@media (770px <=width <=1200px) {
+    
     header {
         padding: 15px 15px 5px;
     }
-    
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
     .header-sup {
         width: 100%;
         justify-content: space-between;
         align-items: space-between;
-        flex-wrap: nowrap;  
+        flex-wrap: nowrap;
     }
 
     .header-sup {
-        display: flex;
-        flex-direction: row;
+        width: 100%;
         justify-content: space-between;
         align-items: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
-    
+
     .logo {
         width: 30%;
         height: auto;
@@ -268,7 +391,7 @@ footer i {
         position: static;
         height: 20px;
         width: 10%;
-        border-radius:5px;
+        border-radius: 5px;
         background-color: white;
         border: none;
         outline: none;
@@ -322,40 +445,86 @@ footer i {
         margin-bottom: 20px;
         width: 45%
     }
-    
+
     .info-article {
         width: 100%
     }
-    
+
     article img {
         width: 100%;
     }
 
-    .content-footer {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: space-around;
+    /* -----------------------------REGISTER------------------------------------ */
+
+    .reg-form {
+        justify-content: center;
+        align-items: center;
     }
 
+    .reg-form .form-div {
+        width: 75%;
+    }
+
+    .reg-form .form-div>input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .reg-form .form-buttons>input {
+        width: 50%;
+    }
+
+    .reg-form .div-perfiles {
+        width: 40%;
+    }
+
+    .reg-form .div-botones {
+        width: 75%;
+    }
+
+    /* -----------------------------REGISTER------------------------------------ */
+    /* -----------------------------LOGIN------------------------------------ */
+
+
+    .login-form .form-div>input {
+        height: 25px;
+        width: 50%;
+    }
+
+    .login-form>input {
+        height: 25px;
+        width: 50%;
+    }
+
+    /* -----------------------------LOGIN------------------------------------ */
 }
 
-@media (1200px <= width) {
+@media (1200px <=width) {
 
     header {
         padding: 15px 15px 5px;
     }
-    
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
     .header-sup {
         width: 100%;
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: space-between;
         flex-wrap: nowrap;
     }
-    
+
+    .header-sup {
+        width: 100%;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+    }
+
     .logo {
         width: 30%;
         height: auto;
@@ -377,17 +546,15 @@ footer i {
         position: static;
         height: 30px;
         width: 10%;
-        border-radius:5px;
+        border-radius: 5px;
         background-color: white;
         border: none;
         outline: none;
     }
 
     header h3 {
-        width: 30%;
-        font-size: 16px;
-        text-align: center;
-        margin: auto 0;
+        width: 35%;
+        font-size: 18px;
     }
 
     .navs-container {
@@ -441,20 +608,64 @@ footer i {
     .descripcion {
         display: block;
     }
-    
+
     .info-article {
         width: 100%
     }
-    
+
     article img {
         width: 100%;
     }
 
-    .content-footer {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: space-around;
+    /* -----------------------------REGISTER------------------------------------ */
+
+    .reg-form {
+        justify-content: center;
+        align-items: center;
     }
+
+    .reg-form .form-div {
+        width: 75%;
+    }
+
+
+    .reg-form .form-div label {
+        font-size: 16px;
+    }
+
+    .reg-form .form-div>input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .reg-form .form-buttons>input {
+        width: 50%;
+    }
+
+    .reg-form .div-perfiles {
+        width: 40%;
+    }
+
+    .reg-form .div-botones {
+        width: 75%;
+    }
+
+    /* -----------------------------REGISTER------------------------------------ */
+    /* -----------------------------LOGIN------------------------------------ */
+
+    .login-form {
+        padding: 25px 0;
+    }
+
+    .login-form .form-div>input {
+        height: 30px;
+        width: 35%;
+    }
+
+    .login-form>input {
+        height: 30px;
+        width: 35%;
+    }
+
+    /* -----------------------------LOGIN------------------------------------ */
 }
