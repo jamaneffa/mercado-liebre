@@ -14,7 +14,6 @@ Verde: #39b54a;
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #ebebeb;
 }
@@ -22,11 +21,6 @@ body {
 header {
     padding: 15px;
     background-color: #EAC926;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
 .header-sup {
@@ -74,7 +68,7 @@ header h3 {
     width: 100%;
     font-size: 16px;
     text-align: center;
-    margin: auto 0;
+    padding: 3.5% 0;
 }
 
 .navs-container {
@@ -134,7 +128,8 @@ section {
 
 article {
     margin-bottom: 10px;
-    width: 100%
+    width: 100%;
+    transition: box-shadow 1.5s;
 }
 
 .info-article {
@@ -204,13 +199,6 @@ article img {
     display: none;
     margin-top: 10px;
     font-size: 16px;
-}
-
-article:hover {
-    .descripcion {
-        display: block;
-    };
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 footer {
@@ -306,8 +294,8 @@ footer i:hover {
     border-radius: 5px;
     border: none;
     outline: none;
+    transition: background-color 1.5s;
 }
-
 
 /* -----------------------------REGISTER------------------------------------ */
 
@@ -350,21 +338,10 @@ footer i:hover {
     border-radius: 5px;
     border: none;
     outline: none;
+    transition: background-color 1.5s;
 }
-
-
-.login-form>input:hover {
-    background-color: #0022AA;
-}
-
 
 /* -----------------------------LOGIN------------------------------------ */
-
-@media (361px <=width <=769px) {
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-}
 
 @media (770px <=width <=1200px) {
     
@@ -421,12 +398,16 @@ footer i:hover {
 
     header h3 {
         width: 35%;
-        font-size: 12px;
+        font-size: 16px;
+        margin: auto 0;
     }
 
-    /* .descripcion {
-        display: block;
-    } */
+    article:hover {
+        .descripcion {
+            display: block;
+        };
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 
     .navs-container {
         margin-top: 15px;
@@ -438,6 +419,10 @@ footer i:hover {
         flex-wrap: wrap
     }
 
+    .navs-container a{
+        font-size: 16px;
+    }
+
     .site-navbar {
         width: 40%;
         display: flex;
@@ -447,7 +432,7 @@ footer i:hover {
     }
 
     .user-navbar {
-        width: 35%;
+        width: 45%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -518,6 +503,10 @@ footer i:hover {
         width: 75%;
     }
 
+    .reg-form .div-botones input:hover {
+        background-color: #0022AA;
+    }
+
     /* -----------------------------REGISTER------------------------------------ */
     /* -----------------------------LOGIN------------------------------------ */
 
@@ -530,6 +519,10 @@ footer i:hover {
     .login-form>input {
         height: 25px;
         width: 50%;
+    }
+
+    .login-form>input:hover {
+        background-color: #0022AA;
     }
 
     /* -----------------------------LOGIN------------------------------------ */
@@ -590,7 +583,8 @@ footer i:hover {
 
     header h3 {
         width: 35%;
-        font-size: 18px;
+        font-size: 20px;
+        margin: auto 0;
     }
 
     .navs-container {
@@ -604,7 +598,7 @@ footer i:hover {
     }
 
     .navs-container a {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .site-navbar {
@@ -641,9 +635,12 @@ footer i:hover {
         width: 23%
     }
 
-    /* .descripcion {
-        display: block;
-    } */
+    article:hover {
+        .descripcion {
+            display: block;
+        };
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 
     .info-article {
         width: 100%
@@ -670,7 +667,7 @@ footer i:hover {
     }
 
     .reg-form .form-div {
-        width: 75%;
+        width: 60%;
     }
 
 
@@ -695,6 +692,10 @@ footer i:hover {
         width: 75%;
     }
 
+    .reg-form .div-botones input:hover {
+        background-color: #0022AA;
+    }
+
     /* -----------------------------REGISTER------------------------------------ */
     /* -----------------------------LOGIN------------------------------------ */
 
@@ -710,6 +711,10 @@ footer i:hover {
     .login-form>input {
         height: 30px;
         width: 35%;
+    }
+
+    .login-form>input:hover {
+        background-color: #0022AA;
     }
 
     /* -----------------------------LOGIN------------------------------------ */
