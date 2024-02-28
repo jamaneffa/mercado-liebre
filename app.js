@@ -4,7 +4,7 @@ const app = express()
 
 const {resolve} = require('path')
 
-const port = 2020	
+const port = process.env.PORT || 2020	
 
 app.listen(port, () => console.log (`Starting Server in http://localhost:${port}`))
 
